@@ -5,8 +5,13 @@ import { View, WebView, StyleSheet } from 'react-native';
 
 export default function components() {
   return (    
-    <WebView></WebView>    
+    <WebView style={Styles.webview}></WebView>    
   );
 }
 
-const Styles = StyleSheet.create({})
+const Styles = StyleSheet.create({
+    webview:{
+        flex:1,
+        borderColor: 'blue'
+    }
+})
